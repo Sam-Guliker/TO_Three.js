@@ -1,6 +1,7 @@
 # Playing around with Three.js
 with Three.js u can make 3d objects in the webrowser and even animate them.:open_mouth:  
 
+[Link](https://sam-guliker.github.io/TO_Three.js/index.html) to the webpage.  
 ![https://sam-guliker.github.io/TO_Three.js/index.html](example.png)
 
 ## Creating a scene.
@@ -58,7 +59,7 @@ And for the last part we append the renderer to our HTML document.
 This is a `<canvas>` element.  
 
 ### Cube
-Creating the cube and placing it.
+Creating the cube and placing it.:triangular_ruler:
 ```Javascript 
 var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
@@ -70,7 +71,7 @@ camera.position.z = 5;
 To create a cube, we need `BoxGeometry` his is an object that  contains all the points (vertices) and fill (faces) of the cube.  
 
 We're using `MeshBasicMaerial` for the material and give it a color attribute which is green.  
-This works the same as css.  
+This works the same as css.:v:  
 
 The third `Mesh` is an object that takes a geometry, and applies it  to a material.  
 Which we can then insert to our scene, and move freely around:dazzled:
@@ -88,7 +89,7 @@ animate();
 ```
 
 ### Animating the cube
-We got the cube in our screen now, but we want  it to animate.  
+We got the cube in our screen now, but we want  it to animate. :smirk:  
 You should place this right above the renderer.render call in the animate function.
 ```Javascript 
 cube.rotation.x += 0.1;
