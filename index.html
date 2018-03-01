@@ -11,31 +11,48 @@
 	<body>
         <script src="three.js"></script>
 		<script>
-            // Creates a camera
-            var scene = new THREE.Scene();
-            var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000)
 
-            // Create a renderer
-            var renderer = new THREE.WebGLRenderer()
-            renderer.setSize(window.innerWidth, window.innerHeight)
-            document.body.appendChild(renderer.domElement)
-
-            // Create the cube
-            var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-            var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-            var cube = new THREE.Mesh( geometry, material );
-            scene.add( cube );
+            let camera,
+                  scene,
+                  renderer,
+                  geometry,
+                  material,
+                  cube;
             
-            camera.position.z = 3;
+            init()
+            animate()
 
-            // Renders the scene
+            function init(){
+                // Creates a camera
+                scene = new THREE.Scene();
+                camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000)
+
+                // Create a renderer
+                renderer = new THREE.WebGLRenderer()
+                renderer.setSize(window.innerWidth, window.innerHeight)
+                document.body.appendChild(renderer.domElement)
+
+                // Create the cube
+                geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+                material = new THREE.MeshNormalMaterial();
+                cube = new THREE.Mesh( geometry, material );
+
+                scene.add( cube );
+                
+                camera.position.z = 3;
+
+            }
+            
             function animate() {
+            // Renders the scene
                 requestAnimationFrame( animate );
+
                 cube.rotation.x += 0.01;
                 cube.rotation.y += 0.01;
+
                 renderer.render( scene, camera );
             }
-            animate();
+
 		</script>
 	</body>
 </html>
