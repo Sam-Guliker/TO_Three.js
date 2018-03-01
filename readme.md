@@ -1,6 +1,6 @@
 # Playing around with Three.js
-with Three.js u can make 3d objects in the webrowser and even animate them.:open_mouth:
-![preview](example.png)
+with Three.js u can make 3d objects in the webrowser and even animate them.:open_mouth:  
+![https://sam-guliker.github.io/TO_Three.js/index.html](example.png)
 
 ## Creating a scene.
 To create anything with [three.js](https://threejs.org/) We need three things.  
@@ -93,6 +93,12 @@ You should place this right above the renderer.render call in the animate functi
 cube.rotation.x += 0.1;
 cube.rotation.y += 0.1;
 ```
-This will run every frame(60 times per second), and give the cube a nice roatation.
+This will run every frame(60 times per second), and give the cube a nice rotation.
 
 :fire: My first Three.js Object :fire:
+
+## Sources
+* [Documentation by Three.js](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene)
+
+## License
+Copyright © 2018 [Sam Guliker](https://github.com/Sam-Guliker). Released under the [MIT license](https://opensource.org/licenses/MIT)
