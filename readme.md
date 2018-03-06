@@ -2,7 +2,7 @@
 with Three.js u can make 3d objects in the webrowser and even animate them.:open_mouth:  
 
 [Link](https://sam-guliker.github.io/TO_Three.js/index.html) to the webpage.  
-![https://sam-guliker.github.io/TO_Three.js/index.html](example.png)
+[![https://gyazo.com/334e7e6929086ed7b6ddf30a9ba47db9](https://i.gyazo.com/334e7e6929086ed7b6ddf30a9ba47db9.gif)](https://gyazo.com/334e7e6929086ed7b6ddf30a9ba47db9)
 
 ## Creating a scene.
 To create anything with [three.js](https://threejs.org/) We need three things.  
